@@ -1,0 +1,34 @@
+﻿@using MvcAjaxPager
+@using MvcAjaxPagerSample.Models
+@model PagedList<Topic>
+@Html.AjaxPager(Model, new PagerOptions {
+											ShowDisabledPagerItems = true, 
+											AlwaysShowFirstLastPageNumber = true, 
+											HorizontalAlign = "center", 
+											ShowFirstLast = true,
+											CssClass = "NavigationBox",
+											AjaxUpdateTargetId = "dvTopics",
+											AjaxOnBegin = "AjaxStart",
+											AjaxOnComplete = "AjaxStop"
+										})
+				
+@foreach (var topic in Model) {
+	<div>
+		<h4>@topic.Title</h4>
+		<p>@topic.Text</p>
+	</div>
+}
+
+@Html.AjaxPager(Model, new PagerOptions { 
+											PageIndexParameterName = "page", 
+											ShowDisabledPagerItems = true, 
+											AlwaysShowFirstLastPageNumber = true, 
+											HorizontalAlign = "center", 
+											ShowFirstLast = false,
+											PrevPageText = "<<",
+											NextPageText = ">>",
+											CssClass = "NavigationBox",
+											AjaxUpdateTargetId = "dvTopics",
+											AjaxOnBegin = "AjaxStart",
+											AjaxOnComplete = "AjaxStop"
+										})

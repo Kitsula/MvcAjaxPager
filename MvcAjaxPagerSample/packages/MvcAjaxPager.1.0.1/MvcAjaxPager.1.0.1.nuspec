@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>MvcAjaxPager</id>
+    <version>1.0.1</version>
+    <title>MVC AJAX Pager</title>
+    <authors>Igor Kitsula</authors>
+    <owners>Igor Kitsula</owners>
+    <licenseUrl>http://kitsula.com/MvcAjaxPager/license</licenseUrl>
+    <projectUrl>http://kitsula.com/MvcAjaxPager</projectUrl>
+    <iconUrl>http://kitsula.com/Content/Img/MvcAjaxPager.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ASP .NET MVC AJAX Pager control with URL history navigation</description>
+    <summary>ASP .NET MVC AJAX Pager control with URL history navigation, SEO friendly</summary>
+    <copyright>Copyright © 2012 Igor Kitsula</copyright>
+    <tags>Pager paginator pagination ajax mvc history navigation</tags>
+    <dependencies>
+      <dependency id="jQuery" version="1.7.2" />
+      <dependency id="PathJS" version="0.8.4" />
+    </dependencies>
+  </metadata>
+</package>

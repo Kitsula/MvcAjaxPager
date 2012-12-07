@@ -1,0 +1,35 @@
+﻿@using MvcAjaxPagerSample.Models
+@using MvcAjaxPager
+@model PagedList<Topic>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div id="dvTopics">
+		@{ Html.RenderPartial("Modules/TopicList", Model); }
+	</div>
+	<script type="text/javascript" src="@Url.Content("~/Scripts/jquery-1.7.2.min.js")"></script>
+	<script type="text/javascript" src="@Url.Content("~/Scripts/path.min.js")"></script>
+	<script type="text/javascript" src="@Url.Content("~/Scripts/jquery.pager-1.0.1.min.js")"></script>
+	<script type="text/javascript">
+		$('.NavigationBox').pager();
+		
+		//pagination before start
+		function AjaxStart() {
+			console.log('Start AJAX call. Loading message can be shown');
+		}
+		// pagination - after request
+		function AjaxStop() {
+			console.log('Stop AJAX call. Loading message can be hidden');
+		};
+	</script>
+</body>
+</html>

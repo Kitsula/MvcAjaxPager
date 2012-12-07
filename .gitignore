@@ -1,4 +1,4 @@
-*.dll
+#*.dll
 
 #ignore thumbnails created by windows
 Thumbs.db
@@ -33,4 +33,4 @@ build.cmd
 [Ii]cons
 MvcPager1.5Src3en.rar
 YUICompressor
-MvcAjaxPagerSample
+#MvcAjaxPagerSample
