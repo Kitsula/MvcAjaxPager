@@ -1,8 +1,8 @@
 ﻿/*
- * MVC AJAX Pager JavaScript Library v1.0.1
+ * MVC AJAX Pager JavaScript Library v1.0.2
  * http://kitsula.com/MvcAjaxPager
  *
- * Copyright 2012 Igor Kitsula
+ * Copyright 2012-2014 Igor Kitsula
  * Released under the MIT license
  * http://kitsula.com/MvcAjaxPager/license
  *
@@ -77,6 +77,7 @@
 							},
 							success: function (data, status, xhr) {
 								$('#' + $(element).data('updatetargetid')).html(data);
+								$("html, body").animate({ scrollTop: 0 }, "slow");
 								getFunction(element.getAttribute("data-ajax-success"), ["data", "status", "xhr"]).apply(this, arguments);
 							},
 							error: getFunction(element.getAttribute("data-ajax-failure"), ["xhr", "status", "error"])

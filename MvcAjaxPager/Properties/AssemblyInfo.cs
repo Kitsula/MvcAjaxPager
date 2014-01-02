@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("MvcAjaxPager")]
-[assembly: AssemblyCopyright("© 2012 Igor Kitsula (http://kitsula.com)")]
+[assembly: AssemblyCopyright("© 2012-2014 Igor Kitsula (http://kitsula.com)")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: AllowPartiallyTrustedCallers]
@@ -20,6 +20,8 @@ using System.Runtime.InteropServices;
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("1d7ac31d-6c83-4a7b-b0d4-d7656175d86c")]
 
+[assembly: SecurityRules(SecurityRuleSet.Level1)]
+
 // Version information for an assembly consists of the following four values:
 //
 //      Major Version
@@ -27,4 +29,4 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("1.0.1.*")]
+[assembly: AssemblyVersion("1.0.2.*")]
